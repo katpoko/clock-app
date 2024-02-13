@@ -13,15 +13,38 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+   
+    <!-- FontShare Import -->
+    <link href="https://api.fontshare.com/v2/css?f[]=red-hat-display@2,401,1,800,501,601,900,901,301,300,801,700,400,500,701,600&display=swap" rel="stylesheet"> 
 
     <!-- Scripts -->
     <script src="script.js" defer></script>
-    
-    <title>Clock App</title>
+
+    <a href="#">Light / Dark</a>
+    <title>kat's klock</title>
 </head>
 <body>
     
-    <h1>Clock App</h1>
+    <main>
+  
+        <!-- Time -->
+        <time class="time">
+                <data class="hours">HH</data> :
+                <data class="minutes">MM</data> :
+                <data class="seconds">SS</data>
+                <data class="amOrPM">PM</data>
+            </time>
+      
+          
+        <!-- Date -->
+        <time class="date">
+          <data class="month">FEB</data>
+          <data class="dayOfMonth">13</data>,
+          <data class="year">2024</data> -
+          <data class="dayOfWeek">TUE</data>
+        </time>
+      
+      </main>
 
 </body>
 </html>
