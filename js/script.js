@@ -1,73 +1,22 @@
-// Check JS is Connected
-console.log('Clock is Ready to Go!');
-/************
-Static Data
-************/
-const allTheMonths = [
-  "JAN",
-  "FEB",
-  "MAR",
-  "APR",
-  "MAY",
-  "June",
-  "July",
-  "AUG",
-  "SEPT",
-  "OCT",
-  "NOV",
-  "DEC"
-];
-const allTheDays = [
-  "SUN",
-  "MON",
-  "TUE",
-  "WED",
-  "THU",
-  "FRI",
-  "SAT"
-];
+// Get link/button/toggle
+// Get the <body>
 
-/************
-Dynamic Data
-************/
-// Get and store current date and time with `new Date()` object
-const dateNow = new Date();
-
-// Check-Check: See all `Date()` methods and properties
-console.log( dateNow );
-
-const gotMonth = dateNow.getMonth();
-// Get current day of the month
-let gotDayOfMonth = dateNow.getDate();
-// Get current year
-const gotYear = dateNow.getFullYear();
-// Get current day of the week
-const gotDayOfWeek = dateNow.getDay();
-
-// Check-Check: Is the data correct? 
-console.log(gotMonth, gotDayOfMonth, gotYear, gotDayOfWeek);
-
-/************
-Get DOM Elements
-************/
-// Get the month
-const month = document.querySelector(".month");
-// Get day of the month
-const dayOfMonth = document.querySelector(".dayOfMonth");
-// Get year
-const year = document.querySelector('.year');
-// Get Day of Week
-const dayOfWeek = document.querySelector('.dayOfWeek');
+const lightDark = document.querySelector('a');
+const body = document.querySelector('body');
 
 
-/************
-Set DOM Elements
-************/
-// Set the month
-month.innerText = allTheMonths[gotMonth];
-// Set day of the month
-dayOfMonth.innerText = gotDayOfMonth;
-// Set the year
-year.innerText = gotYear;
-// Set the day of the week
-dayOfWeek.innerText = allTheDays[gotDayOfWeek];
+// Manually add dark class
+body.classList.add('dark');
+
+// SETTING
+// Add 'dark' class
+// body.classList.add('dark');
+
+lightDark.addEventListener('click', ()=> {
+
+//   add 'dark' class
+body.classList.toggle('dark');
+  
+  //   check check
+ console.log("ok?");
+});

@@ -1,4 +1,34 @@
+/* Diagnostic */
+/* 
+* {
+    outline: 1px dotted darkgray;
+} */
+
 body {
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Clash Grotesk', sans-serif;
     background: goldenrod;
-}
+    transition: background .5s;
+  }
+  
+  
+  .dark {
+    background: darkgray;
+    color: whitesmoke;
+  }
+  
+  main {
+    font-size: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  a {
+    font-family: sans-serif;
+    font-size: 2em; 
+    text-decoration: none;
+    color: black;
+    
+  }
